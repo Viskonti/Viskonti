@@ -15,7 +15,7 @@
                         <div class="logo">Lopper</div>
                         <div class="navbar__menu">
                             <ul>
-                                <li><a href="#" id="active">Home</a></li>
+                                <li><a href="#">Home</a></li>
                                 <li><a href="#">Services</a></li>
                                 <li><a href="#">Work</a></li>
                                 <li><a href="#">About</a></li>
@@ -36,9 +36,9 @@
                         </h1>
                     </div>
                     <div class="scroll">
-                        <span id="scroll">SCROLL TO SEE MORE</span>
+                        <span id="scroll"><nobr>SCROLL TO SEE MORE</nobr></span>
 
-                        <img src="images/scroll2.svg" alt="Прокрутить вниз">
+                        <img src="images/scroll2.svg" class="scrollarrow">
                         
                     </div>
             </div>
@@ -72,10 +72,10 @@
                                         of an immense dark sphere, whose upper half was
                                         strewn with silver.
                                     </p>
-                                    <button class="woman_button">Tap to learn</button>
+                                    <button class="woman_button">Learn More</button>
                                 </div>
                 
-                                <div class="quote">
+                                <div class="pizdec_quote">
                                     <div class="quote__img">
                                       <img src="images/woman.jpg" alt="Женщина">
                                     </div> 
@@ -83,8 +83,6 @@
                                     <div class="block2">
                                         <div class="block2__text">
                                           <p>Commodo sed egestas egestas fringilla phasellus faucibus.</p>
-                                          <img src="images/quotes-up.svg" alt="Верхняя кавычка">
-                                          <img src="images/quotes-down.svg" alt="Нижня кавычка">
                                         </div>
                                     </div>
                                 </div>
@@ -98,15 +96,15 @@
                     <div class="container__services__description">
                         <p class="service_h1">WE ARE AMAZING</p>
                         <h3>Our services</h3>
-                        <p>
+                        <p class="services__description">
                             Quam adipiscing vitae proin sagittis nisl rhoncus
                             mattis rhoncus urna. Quam elementum pulvinar etiam
                             non. Eu consequat.
                         </p>
                     </div>
                     <div class="container__services__cards">
-                        <div class="card">
-                            <img src="images/icon1.svg" class="anim__img1" alt="Иконка 1" />
+                        <div class="card" id="card-anim-1">
+                            <img src="images/icon1.svg" class="img-animation-1" alt="Иконка 1" />
                             <h6>Webdesign</h6>
                             <p>
                                 Tincidunt lobortis feugiat vivamus at augue
@@ -114,8 +112,8 @@
                                 aliquam id diam maecenas.
                             </p>
                         </div>
-                        <div class="card">
-                            <img src="images/icon1.svg" class="anim_img2" alt="Иконка 1" />
+                        <div class="card" id="card-anim-2">
+                            <img src="images/icon2.svg" class="img-animation-2" alt="Иконка 1" />
                             <h6><span id="red">Webdev</span></h6>
                             <p>
                                 Tincidunt lobortis feugiat vivamus at augue
@@ -123,8 +121,8 @@
                                 aliquam id diam maecenas.
                             </p>
                         </div>
-                        <div class="card">
-                            <img src="images/icon1.svg" class="anim_img3" alt="Иконка 1" />
+                        <div class="card" id="card-anim-3">
+                            <img src="images/icon3.svg"id="img-animation-3" alt="Иконка 1" />
                             <h6><span id="yellow">Marketing</span></h6>
                             <p>
                                 Tincidunt lobortis feugiat vivamus at augue
@@ -132,8 +130,8 @@
                                 aliquam id diam maecenas.
                             </p>
                         </div>
-                        <div class="card">
-                            <img src="images/icon1.svg" class="anim_img3" alt="Иконка 1" />
+                        <div class="card" id="card-anim-3">
+                            <img src="images/icon4.svg" id="img-animation-3" alt="Иконка 1" />
                             <h6><span id="yellow">Webdev</span></h6>
                             <p>
                                 Tincidunt lobortis feugiat vivamus at augue
@@ -141,8 +139,8 @@
                                 aliquam id diam maecenas.
                             </p>
                         </div>
-                        <div class="card">
-                            <img src="images/icon1.svg" class="anim__img1" alt="Иконка 1" />
+                        <div class="card" id="card-anim-1">
+                            <img src="images/icon5.svg" class="img-animation-1" alt="Иконка 1" />
                             <h6><span>Webdesign</span></h6>
                             <p>
                                 Tincidunt lobortis feugiat vivamus at augue
@@ -150,8 +148,8 @@
                                 aliquam id diam maecenas.
                             </p>
                         </div>
-                        <div class="card">
-                            <img src="images/icon1.svg" class="anim_img2" alt="Иконка 1" />
+                        <div class="card" id="card-anim-2">
+                            <img src="images/icon6.svg" class="img-animation-2" alt="Иконка 1" />
                             <h6><span id="red">Marketing</span></h6>
                             <p>
                                 Tincidunt lobortis feugiat vivamus at augue
@@ -162,7 +160,8 @@
                     </div>
                     <button class="service_button">Learn More</button>
                 </div>
-                <div class="testimonials">
+                <div class="ebuchie_img">
+                    <div class="main__picture">
                     <div class="main__container">
                       <div class="faces">
                         <img src="images/n-face.png" alt="Чёрная женщина" id="n-face">
@@ -182,16 +181,27 @@
                       </div>
                     </div>
                   </div>
+                  </div>
             </div>
             <div class="main__container">
                 <div class="newsletter">
                     <div class="newsletter__box">
                         <h3>Subscribe to our newsletter</h3>
                         <h6>Cras pulvinar mattis nunc sed blandit.</h6>
-                        <form action="subscribe.php">
-                            <input type="email" placeholder="ENTER EMAIL">
-                            <input type="submit" value="SUBSCRIBE">
-                        </form>
+                        <div class="page-content__newsletter__form">
+                            <input type="email" class="page-content__email" placeholder="enter email">
+                            <div class="page-content__button">
+                                <button type="submit" class="page-content__button">
+                                    <p>Subscribe</p>
+                                    <div class="page-content__button__arrow">
+                                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.1391 4.45316C15.3343 4.2579 15.3343 3.94132 15.1391 3.74606L11.9571 0.564075C11.7618 0.368813 11.4452 0.368813 11.25 0.564075C11.0547 0.759338 11.0547 1.07592 11.25 1.27118L14.0784 4.09961L11.25 6.92804C11.0547 7.1233 11.0547 7.43988 11.25 7.63514C11.4452 7.83041 11.7618 7.83041 11.9571 7.63514L15.1391 4.45316ZM0.637207 4.59961H14.7855V3.59961H0.637207V4.59961Z"/>
+                                            </svg>   
+                                    </div>
+                                </button>
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,7 +241,7 @@
                             <span id="contact">856 - 693 - 456</span> 
                         </div>
                     </div>
-                    <div class="contact__block">
+                    <div class="follow__block">
                         <p>FOLLOW US</p>
                         <img src="images/twitter.svg" alt="Твиттер">
                         <img src="images/facebook.svg" alt="Фейсбук">
@@ -249,6 +259,6 @@
             </div>
         </main>
         <footer><div class="containerf"></div></footer>
-        <script src="js/navm.js"></script>
+        <script src="js/fillstaff.js"></script>
     </body>
 </html>
