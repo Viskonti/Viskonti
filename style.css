@@ -445,6 +445,7 @@ header {
 footer {
   background-color: #150433;
   width: 100%;
+  height: 200px;
 }
 .footer__container {
   width: 100%;
